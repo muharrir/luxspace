@@ -12,7 +12,7 @@ function RecommenCard() {
   return (
     <div className="mt-[30px] grid grid-cols-4 gap-x-[30px]">
       {item.map((v, i) => (
-        <div className="py-[30px] px-5 rounded-[25px] bg-white">
+        <div className="py-[30px] px-5 rounded-[25px] bg-white" key={i}>
           <div className="flex justify-center items-center">
             <Image
               src={`/image/${v.img}.png`}
